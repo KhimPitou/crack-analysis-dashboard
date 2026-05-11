@@ -27,15 +27,19 @@ header .inner{max-width:1800px;margin:0 auto;padding:16px 24px;display:flex;alig
 .layout{max-width:1800px;margin:0 auto;display:grid;grid-template-columns:200px 1fr 300px;gap:20px;padding:24px;}
 
 /* SIDEBAR */
-  <!-- FIND (each section opening tag, 8 total) -->
-<div id="sec-crack-type" class="main-section card glass glow-red">
-<div id="sec-crack-size" class="main-section card glass" style="display:none;">
-<div id="sec-timing" class="main-section card glass" style="display:none;">
-<div id="sec-behavior" class="main-section card glass" style="display:none;">
-<div id="sec-environment" class="main-section card glass" style="display:none;">
-<div id="sec-inspector" class="main-section card glass" style="display:none;">
-<div id="sec-diagram" class="main-section card glass" style="display:none;">
-<div id="sec-report" class="main-section card glass" style="display:none;">
+ <aside class="sidebar glass">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:18px;">ផ្នែកវិភាគ</h2>
+    <div class="space-y">
+      <div class="nav-item active" data-target="sec-crack-type"><i class="ti ti-pencil-minus"></i>ទម្រង់ស្នាមប្រេះ</div>
+      <div class="nav-item" data-target="sec-crack-size"><i class="ti ti-arrows-maximize"></i>ទំហំស្នាមប្រេះ</div>
+      <div class="nav-item" data-target="sec-timing"><i class="ti ti-clock"></i>ពេលកើតឡើង</div>
+      <div class="nav-item" data-target="sec-behavior"><i class="ti ti-activity"></i>ឥរិយាបថស្នាមប្រេះ</div>
+      <div class="nav-item" data-target="sec-environment"><i class="ti ti-cloud"></i>បរិស្ថាន</div>
+      <div class="nav-item" data-target="sec-inspector"><i class="ti ti-user"></i>អ្នកត្រួតពិនិត្យ</div>
+      <div class="nav-item" data-target="sec-diagram"><i class="ti ti-chart-dots"></i>គំនូសវិភាគ</div>
+      <div class="nav-item" data-target="sec-report"><i class="ti ti-file-text"></i>របាយការណ៍ AI</div>
+    </div>
+  </aside>
 .sidebar-nav h2{font-size:15px;font-weight:700;margin-bottom:16px;}
 .nav-item{padding:10px 14px;border-radius:14px;cursor:pointer;transition:all .2s;color:#ccc;display:flex;align-items:center;gap:8px;font-size:13px;}
 .nav-item:hover{background:rgba(255,255,255,0.06);transform:translateX(4px);color:#fff;}
