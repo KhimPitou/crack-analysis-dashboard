@@ -28,16 +28,6 @@ header .inner{max-width:1800px;margin:0 auto;padding:16px 24px;display:flex;alig
 
 /* SIDEBAR */
   <!-- FIND (each section opening tag, 8 total) -->
-<div id="sec-crack-type" class="card glass glow-red">
-<div id="sec-crack-size" class="card glass">
-<div id="sec-timing" class="card glass">
-<div id="sec-behavior" class="card glass">
-<div id="sec-environment" class="card glass">
-<div id="sec-inspector" class="card glass">
-<div id="sec-diagram" class="card glass">
-<div id="sec-report" class="card glass" style="display:none;">
-
-<!-- REPLACE WITH -->
 <div id="sec-crack-type" class="main-section card glass glow-red">
 <div id="sec-crack-size" class="main-section card glass" style="display:none;">
 <div id="sec-timing" class="main-section card glass" style="display:none;">
@@ -631,8 +621,11 @@ function saveInspector(){
 }
 
 function generateReport(){
-  const panel = document.getElementById('sec-report');
-  panel.style.display='block';
+document.querySelectorAll('.main-section').forEach(s => s.style.display = 'none');
+document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+document.querySelectorAll('.nav-item')[7].classList.add('active');
+const panel = document.getElementById('sec-report');
+panel.style.display='block';
   let score = 2 + (state.crackWidth/10)*6;
   if(state.hasWater) score += 1;
   if(state.growing) score += 0.5;
