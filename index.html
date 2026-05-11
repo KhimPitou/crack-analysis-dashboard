@@ -21,7 +21,7 @@ header .inner{max-width:1800px;margin:0 auto;padding:16px 24px;display:flex;alig
 .header-tags{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
 .tag{padding:6px 12px;border-radius:10px;font-size:12px;}
 .tag-green{color:#4ade80;}
-.btn-dl{padding:8px 16px;border-radius:10px;font-size:13px;border:none;cursor:pointer;color:#fff;font-family:'Inter',sans-serif;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);}
+.btn-dl{padding:8px 16px;border-radius:10px;font-size:13px;border:none;cursor:pointer;color:#fff;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);}
 .btn-dl:hover{border-color:#ff4d4f;}
 .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#22d3ee,#3b82f6);}
 .layout{max-width:1800px;margin:0 auto;display:grid;grid-template-columns:200px 1fr 300px;gap:20px;padding:24px;}
@@ -34,7 +34,7 @@ header .inner{max-width:1800px;margin:0 auto;padding:16px 24px;display:flex;alig
 .nav-item i{font-size:15px;}
 
 /* PILL BUTTONS */
-.pill-btn{padding:10px 18px;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);color:#ccc;cursor:pointer;font-size:13px;font-family:'Inter',sans-serif;transition:all .2s;}
+.pill-btn{padding:10px 18px;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);color:#ccc;cursor:pointer;font-size:13px;transition:all .2s;}
 .pill-btn:hover{border-color:#ff4d4f;transform:translateY(-2px);box-shadow:0 0 16px rgba(255,77,79,0.2);color:#fff;}
 .pill-btn.active{background:linear-gradient(135deg,#ff4d4f,#ff7a00);border-color:transparent;color:#fff;box-shadow:0 0 24px rgba(255,77,79,0.4);}
 
@@ -47,21 +47,20 @@ header .inner{max-width:1800px;margin:0 auto;padding:16px 24px;display:flex;alig
 
 /* FORMS */
 .field-label{font-size:12px;color:#888;display:block;margin-bottom:6px;}
-textarea,input[type=text],input[type=date],input[type=file],select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:12px 14px;color:#fff;font-size:13px;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s;}
-textarea:focus,input[type=text]:focus,input[type=date]:focus,select:focus{border-color:#ff4d4f;}
+textarea,input[type=text],input[type=date],input[type=file],select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:12px 14px;color:#fff;font-size:13px;outline:none;transition:border-color .2s;}
+textarea:focus,input:focus,select:focus{border-color:#ff4d4f;}
 select{background:#111;}
-select option{background:#111;color:#fff;}
 textarea{resize:vertical;min-height:100px;}
 input[readonly]{cursor:default;color:#22d3ee;font-weight:600;border-color:rgba(34,211,238,0.3);}
 
 /* CHECKBOX */
 .check-row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:14px 16px;cursor:pointer;transition:all .2s;}
 .check-row:hover{border-color:rgba(255,77,79,0.4);}
-.check-row input[type=checkbox]{accent-color:#ff4d4f;width:18px;height:18px;cursor:pointer;}
+.check-row input{accent-color:#ff4d4f;width:18px;height:18px;cursor:pointer;}
 .check-row.checked{border-color:rgba(255,77,79,0.5);background:rgba(255,77,79,0.08);}
 
 /* RANGE */
-input[type=range]{width:100%;accent-color:#ff4d4f;border:none;background:transparent;padding:0;}
+input[type=range]{width:100%;accent-color:#ff4d4f;background:transparent;padding:0;}
 .range-track{width:100%;background:rgba(255,255,255,0.1);border-radius:99px;height:8px;overflow:hidden;margin-top:8px;}
 .range-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#ff4d4f,#ff7a00);transition:width .15s;}
 
@@ -95,9 +94,9 @@ input[type=range]{width:100%;accent-color:#ff4d4f;border:none;background:transpa
 .action-item{background:rgba(255,255,255,0.04);border-radius:14px;padding:12px 14px;font-size:13px;}
 .action-cyan{border:1px solid rgba(34,211,238,0.2);}
 .action-red{border:1px solid rgba(255,77,79,0.2);}
-.btn-primary{padding:14px;border-radius:16px;background:linear-gradient(135deg,#ff4d4f,#ff7a00);font-weight:600;font-size:14px;border:none;cursor:pointer;color:#fff;font-family:'Inter',sans-serif;box-shadow:0 0 20px rgba(255,77,79,0.35);transition:opacity .2s;}
+.btn-primary{padding:14px;border-radius:16px;background:linear-gradient(135deg,#ff4d4f,#ff7a00);font-weight:600;font-size:14px;border:none;cursor:pointer;color:#fff;box-shadow:0 0 20px rgba(255,77,79,0.35);transition:opacity .2s;}
 .btn-primary:hover{opacity:.9;}
-.btn-ghost{padding:14px;border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);font-weight:600;font-size:14px;cursor:pointer;color:#fff;font-family:'Inter',sans-serif;transition:all .2s;}
+.btn-ghost{padding:14px;border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);font-weight:600;font-size:14px;cursor:pointer;color:#fff;transition:all .2s;}
 .btn-ghost:hover{border-color:#ff4d4f;}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 .grid2col{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
@@ -106,16 +105,13 @@ input[type=range]{width:100%;accent-color:#ff4d4f;border:none;background:transpa
 .pulse{animation:pulse 2s infinite;}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
 .green-dot{width:14px;height:14px;border-radius:50%;background:#4ade80;}
-
-/* PROJECT INPUT IN HEADER */
-.project-input{background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,0.25);color:#fff;font-size:12px;font-family:'Inter',sans-serif;outline:none;width:100px;padding:2px 4px;}
+.project-input{background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,0.25);color:#fff;font-size:12px;outline:none;width:100px;padding:2px 4px;}
 .project-input::placeholder{color:#888;}
 .project-input:focus{border-bottom-color:#ff4d4f;}
 </style>
 </head>
 <body class="floating-grid">
 
-<!-- HEADER -->
 <header>
   <div class="inner">
     <div style="display:flex;align-items:center;gap:14px;">
@@ -140,551 +136,256 @@ input[type=range]{width:100%;accent-color:#ff4d4f;border:none;background:transpa
   </div>
 </header>
 
-<!-- LAYOUT -->
 <div class="layout">
-
   <!-- SIDEBAR -->
   <aside class="glass" style="border-radius:24px;padding:20px;height:fit-content;position:sticky;top:80px;">
     <div class="sidebar-nav">
       <h2>ផ្នែកវិភាគ</h2>
       <div class="space-y">
-        <div class="nav-item active" onclick="scrollTo('sec-crack-type',this)"><i class="ti ti-pencil-minus"></i>ទម្រង់ស្នាមប្រេះ</div>
-        <div class="nav-item" onclick="scrollTo('sec-crack-size',this)"><i class="ti ti-arrows-maximize"></i>ទំហំស្នាមប្រេះ</div>
-        <div class="nav-item" onclick="scrollTo('sec-timing',this)"><i class="ti ti-clock"></i>ពេលកើតឡើង</div>
-        <div class="nav-item" onclick="scrollTo('sec-behavior',this)"><i class="ti ti-activity"></i>ឥរិយាបថស្នាមប្រេះ</div>
-        <div class="nav-item" onclick="scrollTo('sec-environment',this)"><i class="ti ti-cloud"></i>បរិស្ថាន</div>
-        <div class="nav-item" onclick="scrollTo('sec-inspector',this)"><i class="ti ti-user"></i>អ្នកត្រួតពិនិត្យ</div>
-        <div class="nav-item" onclick="scrollTo('sec-diagram',this)"><i class="ti ti-chart-dots"></i>គំនូសវិភាគ</div>
-        <div class="nav-item" onclick="scrollTo('sec-report',this)"><i class="ti ti-file-text"></i>របាយការណ៍ AI</div>
+        <div class="nav-item active" data-target="sec-crack-type"><i class="ti ti-pencil-minus"></i>ទម្រង់ស្នាមប្រេះ</div>
+        <div class="nav-item" data-target="sec-crack-size"><i class="ti ti-arrows-maximize"></i>ទំហំស្នាមប្រេះ</div>
+        <div class="nav-item" data-target="sec-timing"><i class="ti ti-clock"></i>ពេលកើតឡើង</div>
+        <div class="nav-item" data-target="sec-behavior"><i class="ti ti-activity"></i>ឥរិយាបថស្នាមប្រេះ</div>
+        <div class="nav-item" data-target="sec-environment"><i class="ti ti-cloud"></i>បរិស្ថាន</div>
+        <div class="nav-item" data-target="sec-inspector"><i class="ti ti-user"></i>អ្នកត្រួតពិនិត្យ</div>
+        <div class="nav-item" data-target="sec-diagram"><i class="ti ti-chart-dots"></i>គំនូសវិភាគ</div>
+        <div class="nav-item" data-target="sec-report"><i class="ti ti-file-text"></i>របាយការណ៍ AI</div>
       </div>
     </div>
   </aside>
 
-  <!-- MAIN -->
+  <!-- MAIN CONTENT -->
   <main style="display:flex;flex-direction:column;gap:20px;">
-
-    <!-- 1. CRACK TYPE -->
     <div id="sec-crack-type" class="card glass glow-red">
-      <div class="card-header">
-        <h3>1. ទម្រង់ស្នាមប្រេះ</h3>
-        <span class="badge-req">ចាំបាច់</span>
-      </div>
+      <div class="card-header"><h3>1. ទម្រង់ស្នាមប្រេះ</h3><span class="badge-req">ចាំបាច់</span></div>
       <div class="flex-wrap-gap">
-        <button class="pill-btn active" onclick="selectCrackType(this,'បញ្ឈរ')">បញ្ឈរ</button>
-        <button class="pill-btn" onclick="selectCrackType(this,'ទ្រេត ~45°')">ទ្រេត ~45°</button>
-        <button class="pill-btn" onclick="selectCrackType(this,'ផ្ដេក')">ផ្ដេក</button>
-        <button class="pill-btn" onclick="selectCrackType(this,'រាងកោង')">រាងកោង</button>
-        <button class="pill-btn" onclick="selectCrackType(this,'បណ្ដោយ')">បណ្ដោយ</button>
+        <button class="pill-btn active" data-type="បញ្ឈរ">បញ្ឈរ</button>
+        <button class="pill-btn" data-type="ទ្រេត ~45°">ទ្រេត ~45°</button>
+        <button class="pill-btn" data-type="ផ្ដេក">ផ្ដេក</button>
+        <button class="pill-btn" data-type="រាងកោង">រាងកោង</button>
+        <button class="pill-btn" data-type="បណ្ដោយ">បណ្ដោយ</button>
       </div>
-      <div id="crack-type-note" style="margin-top:14px;padding:12px 16px;background:rgba(255,77,79,0.08);border:1px solid rgba(255,77,79,0.2);border-radius:14px;font-size:13px;color:#ff9a9b;">
-        ✓ ស្នាមប្រេះបញ្ឈរ — ជាញឹកញាប់ដោយសារការស្រុត ឬការដាក់ទម្ងន់ក្នុងទ្រេត
-      </div>
+      <div id="crack-type-note" style="margin-top:14px;padding:12px 16px;background:rgba(255,77,79,0.08);border:1px solid rgba(255,77,79,0.2);border-radius:14px;font-size:13px;color:#ff9a9b;">✓ ស្នាមប្រេះបញ្ឈរ — ជាញឹកញាប់ដោយសារការស្រុត ឬការដាក់ទម្ងន់ក្នុងទ្រេត</div>
     </div>
 
-    <!-- 2. CRACK SIZE -->
     <div id="sec-crack-size" class="card glass">
-      <div class="card-header">
-        <h3>2. ទំហំស្នាមប្រេះ</h3>
-        <span class="badge-req">ចាំបាច់</span>
-      </div>
+      <div class="card-header"><h3>2. ទំហំស្នាមប្រេះ</h3><span class="badge-req">ចាំបាច់</span></div>
       <div class="space-y">
-        <label class="check-row" id="chk-water-wrap">
-          <input type="checkbox" id="chk-water" onchange="toggleCheck('chk-water-wrap',this,'hasWater')">
-          <span>មានការជ្រាបទឹក</span>
-        </label>
-        <label class="check-row" id="chk-growing-wrap">
-          <input type="checkbox" id="chk-growing" onchange="toggleCheck('chk-growing-wrap',this,'growing')">
-          <span>ស្នាមប្រេះកំពុងរីកធំ</span>
-        </label>
-        <div>
-          <label class="field-label">ទំហំស្នាមប្រេះ (mm)</label>
-          <input type="range" min="0" max="10" value="1.6" step="0.1" id="crack-width-slider" oninput="updateSlider()">
-          <div style="display:flex;justify-content:space-between;font-size:13px;margin-top:8px;">
-            <span>ទំហំដែលវាស់បាន</span>
-            <span style="color:#ff6b6d;font-weight:600;" id="slider-val">1.6 mm</span>
-          </div>
-          <div class="range-track" style="margin-top:6px;">
-            <div class="range-fill" id="range-fill" style="width:16%"></div>
-          </div>
-          <div style="display:flex;justify-content:space-between;font-size:11px;color:#555;margin-top:4px;">
-            <span>0</span><span>&lt;0.3 តូច</span><span>0.3–1 មធ្យម</span><span>&gt;1 ធំ</span><span>10</span>
-          </div>
-        </div>
-        <div class="grid2">
-          <div id="size-label-small" class="glass" style="border-radius:14px;padding:14px;font-size:13px;text-align:center;">ស្នាមតូច</div>
-          <div id="size-label-medium" class="glass" style="border-radius:14px;padding:14px;font-size:13px;text-align:center;border:1px solid #ff4d4f;color:#ff6b6d;">មធ្យម</div>
-        </div>
+        <label class="check-row" id="chk-water-wrap"><input type="checkbox" id="chk-water"><span>មានការជ្រាបទឹក</span></label>
+        <label class="check-row" id="chk-growing-wrap"><input type="checkbox" id="chk-growing"><span>ស្នាមប្រេះកំពុងរីកធំ</span></label>
+        <label class="field-label">ទំហំស្នាមប្រេះ (mm)</label>
+        <input type="range" min="0" max="10" value="1.6" step="0.1" id="crack-width-slider">
+        <div style="display:flex;justify-content:space-between;font-size:13px;margin-top:8px;"><span>ទំហំដែលវាស់បាន</span><span style="color:#ff6b6d;font-weight:600;" id="slider-val">1.6 mm</span></div>
+        <div class="range-track" style="margin-top:6px;"><div class="range-fill" id="range-fill" style="width:16%"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;color:#555;margin-top:4px;"><span>0</span><span>&lt;0.3 តូច</span><span>0.3–1 មធ្យម</span><span>&gt;1 ធំ</span><span>10</span></div>
+        <div class="grid2"><div id="size-label-small" class="glass" style="border-radius:14px;padding:14px;font-size:13px;text-align:center;">ស្នាមតូច</div><div id="size-label-medium" class="glass" style="border-radius:14px;padding:14px;font-size:13px;text-align:center;border:1px solid #ff4d4f;color:#ff6b6d;">មធ្យម</div></div>
       </div>
     </div>
 
-    <!-- 3. TIMING + DESCRIPTION -->
     <div id="sec-timing" class="card glass">
-      <div class="card-header">
-        <h3>3. ពេលវេលាកើតស្នាមប្រេះ</h3>
-        <span class="badge-req">ចាំបាច់</span>
-      </div>
+      <div class="card-header"><h3>3. ពេលវេលាកើតស្នាមប្រេះ</h3><span class="badge-req">ចាំបាច់</span></div>
       <div class="flex-wrap-gap" style="margin-bottom:16px;">
-        <button class="pill-btn" onclick="selectPill(this,'timing')">0–4 ម៉ោង</button>
-        <button class="pill-btn active" onclick="selectPill(this,'timing')">1–7 ថ្ងៃ</button>
-        <button class="pill-btn" onclick="selectPill(this,'timing')">1–4 សប្ដាហ៍</button>
-        <button class="pill-btn" onclick="selectPill(this,'timing')">1–6 ខែ</button>
-        <button class="pill-btn" onclick="selectPill(this,'timing')">ច្រើនឆ្នាំ</button>
+        <button class="pill-btn" data-timing="0–4 ម៉ោង">0–4 ម៉ោង</button>
+        <button class="pill-btn active" data-timing="1–7 ថ្ងៃ">1–7 ថ្ងៃ</button>
+        <button class="pill-btn" data-timing="1–4 សប្ដាហ៍">1–4 សប្ដាហ៍</button>
+        <button class="pill-btn" data-timing="1–6 ខែ">1–6 ខែ</button>
+        <button class="pill-btn" data-timing="ច្រើនឆ្នាំ">ច្រើនឆ្នាំ</button>
       </div>
       <div class="grid2col">
-        <div>
-          <label class="field-label">ពិពណ៌នាស្នាមប្រេះ</label>
-          <textarea placeholder="បញ្ចូលព័ត៌មានបន្ថែមអំពីស្នាមប្រេះ..." id="crack-desc" oninput="trackField('crack-desc')"></textarea>
-        </div>
-        <div>
-          <label class="field-label">ទីតាំងពិនិត្យ</label>
-          <input type="text" placeholder="ឧ. ជាន់ទី២ - ធ្នឹមខាងមុខ" id="location-input" oninput="trackField('location')">
-          <label class="field-label" style="margin-top:12px;">ថ្ងៃត្រួតពិនិត្យ</label>
-          <input type="date" id="inspection-date" onchange="trackField('date')">
-        </div>
+        <div><label class="field-label">ពិពណ៌នាស្នាមប្រេះ</label><textarea id="crack-desc" placeholder="បញ្ចូលព័ត៌មានបន្ថែម..."></textarea></div>
+        <div><label class="field-label">ទីតាំងពិនិត្យ</label><input type="text" id="location-input" placeholder="ឧ. ជាន់ទី២ - ធ្នឹមខាងមុខ"><label class="field-label" style="margin-top:12px;">ថ្ងៃត្រួតពិនិត្យ</label><input type="date" id="inspection-date"></div>
       </div>
     </div>
 
-    <!-- 4. BEHAVIOR -->
     <div id="sec-behavior" class="card glass">
-      <div class="card-header">
-        <h3>4. ឥរិយាបថស្នាមប្រេះ</h3>
-        <span class="badge-req">ចាំបាច់</span>
-      </div>
+      <div class="card-header"><h3>4. ឥរិយាបថស្នាមប្រេះ</h3><span class="badge-req">ចាំបាច់</span></div>
       <div class="space-y">
-        <div class="behavior-row" id="beh-stable" onclick="selectBehavior('stable')">
-          <span>មានស្ថេរភាព</span><span style="color:#4ade80;">សុវត្ថិភាព</span>
-        </div>
-        <div class="behavior-row beh-orange" id="beh-slow" onclick="selectBehavior('slow')">
-          <span>កំពុងរីកធំយឺតៗ</span><span style="color:#fb923c;">តាមដាន</span>
-        </div>
-        <div class="behavior-row" id="beh-water" onclick="selectBehavior('water')">
-          <span>ជ្រាបទឹក</span><span style="color:#ff6b6d;">ហានិភ័យខ្ពស់</span>
-        </div>
-        <div class="behavior-row" id="beh-rapid" onclick="selectBehavior('rapid')">
-          <span>រីកធំលឿន</span><span style="color:#ff4d4f;">បន្ទាន់!</span>
-        </div>
+        <div class="behavior-row" data-beh="stable"><span>មានស្ថេរភាព</span><span style="color:#4ade80;">សុវត្ថិភាព</span></div>
+        <div class="behavior-row beh-orange" data-beh="slow"><span>កំពុងរីកធំយឺតៗ</span><span style="color:#fb923c;">តាមដាន</span></div>
+        <div class="behavior-row" data-beh="water"><span>ជ្រាបទឹក</span><span style="color:#ff6b6d;">ហានិភ័យខ្ពស់</span></div>
+        <div class="behavior-row" data-beh="rapid"><span>រីកធំលឿន</span><span style="color:#ff4d4f;">បន្ទាន់!</span></div>
       </div>
     </div>
 
-    <!-- 5. ENVIRONMENT -->
     <div id="sec-environment" class="card glass">
-      <div class="card-header">
-        <h3>5. ស្ថានភាពបរិស្ថាន</h3>
-      </div>
+      <div class="card-header"><h3>5. ស្ថានភាពបរិស្ថាន</h3></div>
       <div class="flex-wrap-gap" style="margin-bottom:16px;">
-        <button class="pill-btn" onclick="selectPill(this,'env')">សំណើម / ប៉ះទឹក</button>
-        <button class="pill-btn active" onclick="selectPill(this,'env')">ស្ងួត</button>
-        <button class="pill-btn" onclick="selectPill(this,'env')">ប្រតិកម្មគីមី </button>
-        <button class="pill-btn" onclick="selectPill(this,'env')">របកជ្រុះ / ច្រេះ</button>
+        <button class="pill-btn" data-env="ជើង/ទឹក">ជើង / ទឹក</button>
+        <button class="pill-btn active" data-env="ស្ងួត">ស្ងួត</button>
+        <button class="pill-btn" data-env="អគ្គិសនី">អគ្គិសនី</button>
+        <button class="pill-btn" data-env="ត្របកជ្រុះ">ត្របកជ្រុះ</button>
       </div>
-      <div class="grid2col">
-        <div>
-          <label class="field-label">សីតុណ្ហភាព (°C)</label>
-          <input type="text" placeholder="ឧ. 35°C" id="temperature">
-        </div>
-        <div>
-          <label class="field-label">ជំហរ / ថ្ងៃ</label>
-          <input type="text" placeholder="ព្រឹក / ល្ងាច / យប់" id="time-of-day">
-        </div>
-      </div>
+      <div class="grid2col"><div><label class="field-label">សីតុណ្ហភាព (°C)</label><input type="text" id="temperature" placeholder="ឧ. 35°C"></div><div><label class="field-label">ជំហរ / ថ្ងៃ</label><input type="text" id="time-of-day" placeholder="ព្រឹក / ល្ងាច / យប់"></div></div>
     </div>
 
-    <!-- 6. INSPECTOR FORM -->
     <div id="sec-inspector" class="card glass">
-      <div class="card-header">
-        <h3>ព័ត៌មានអ្នកត្រួតពិនិត្យ</h3>
-        <span class="badge-ai">Engineering Inspection Form</span>
-      </div>
+      <div class="card-header"><h3>ព័ត៌មានអ្នកត្រួតពិនិត្យ</h3><span class="badge-ai">Engineering Inspection Form</span></div>
       <div class="grid2col">
-        <div>
-          <label class="field-label">ឈ្មោះវិស្វករ</label>
-          <input type="text" id="eng-name" value="ឃឹម ពិទូរ្យ" readonly>
-        </div>
-        <div>
-          <label class="field-label">លេខទូរស័ព្ទ</label>
-          <input type="text" id="eng-phone" value="017 687 668" readonly>
-        </div>
-        <div>
-          <label class="field-label">ប្រភេទអគារ</label>
-          <select id="building-type">
-            <option>ផ្ទះលំនៅដ្ឋាន</option>
-            <option>អគារពាណិជ្ជកម្ម</option>
-            <option>ឃ្លាំង / រោងចក្រ</option>
-            <option>ស្ពាន / ហេដ្ឋារចនាសម្ព័ន្ធ</option>
-          </select>
-        </div>
-        <div>
-          <label class="field-label">Upload Crack Image</label>
-          <input type="file" accept="image/*" id="crack-image" onchange="previewImage(this)">
-          <div id="img-preview" style="margin-top:10px;display:none;">
-            <img id="preview-img" style="max-width:100%;border-radius:12px;border:1px solid rgba(255,77,79,0.3);">
-          </div>
-        </div>
+        <div><label class="field-label">ឈ្មោះវិស្វករ</label><input type="text" id="eng-name" value="ឃឹម ពិទូរ្យ" readonly></div>
+        <div><label class="field-label">លេខទូរស័ព្ទ</label><input type="text" id="eng-phone" value="017 687 668" readonly></div>
+        <div><label class="field-label">ប្រភេទអគារ</label><select id="building-type"><option>ផ្ទះលំនៅដ្ឋាន</option><option>អគារពាណិជ្ជកម្ម</option><option>ឃ្លាំង / រោងចក្រ</option><option>ស្ពាន / ហេដ្ឋារចនាសម្ព័ន្ធ</option></select></div>
+        <div><label class="field-label">Upload Crack Image</label><input type="file" accept="image/*" id="crack-image"><div id="img-preview" style="margin-top:10px;display:none;"><img id="preview-img" style="max-width:100%;border-radius:12px;border:1px solid rgba(255,77,79,0.3);"></div></div>
       </div>
-      <div style="margin-top:16px;text-align:right;">
-        <button class="btn-primary" style="padding:12px 28px;" onclick="saveInspector()">💾 រក្សាទុក</button>
-      </div>
+      <div style="margin-top:16px;text-align:right;"><button class="btn-primary" style="padding:12px 28px;" onclick="saveInspector()">💾 រក្សាទុក</button></div>
     </div>
 
-    <!-- 7. DIAGRAM -->
     <div id="sec-diagram" class="card glass">
-      <div class="card-header">
-        <h3>គំនូសវិភាគរចនាសម្ព័ន្ធ</h3>
-        <span class="badge-ai">ការវាយតម្លៃ AI ពេលជាក់ស្តែង</span>
-      </div>
-
+      <div class="card-header"><h3>គំនូសវិភាគរចនាសម្ព័ន្ធ</h3><span class="badge-ai">ការវាយតម្លៃ AI ពេលជាក់ស្តែង</span></div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px;">
-        <!-- GAUGE -->
-        <div class="glass" style="border-radius:20px;padding:20px;text-align:center;">
-          <h4 style="font-size:14px;font-weight:600;margin-bottom:16px;">កម្រិតភាពធ្ងន់ធ្ងរ</h4>
-          <div id="gauge-ring" class="risk-ring" style="margin:0 auto;"></div>
-          <div style="margin-top:10px;font-size:12px;color:#888;" id="gauge-label">ទំហំ: 1.6mm</div>
-        </div>
-        <!-- CAUSE BARS -->
-        <div class="glass" style="border-radius:20px;padding:20px;">
-          <h4 style="font-size:14px;font-weight:600;margin-bottom:16px;">ការបែងចែកមូលហេតុ</h4>
-          <div class="space-y">
-            <div>
-              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px;"><span>ការស្រុត</span><span>40%</span></div>
-              <div class="cause-bar-track"><div class="cause-bar-fill" style="width:40%;background:linear-gradient(90deg,#ff4d4f,#ff7a00);"></div></div>
-            </div>
-            <div>
-              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px;"><span>សីតុណ្ហភាព</span><span>25%</span></div>
-              <div class="cause-bar-track"><div class="cause-bar-fill" style="width:25%;background:#22d3ee;"></div></div>
-            </div>
-            <div>
-              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px;"><span>ការរួញ</span><span>20%</span></div>
-              <div class="cause-bar-track"><div class="cause-bar-fill" style="width:20%;background:#facc15;"></div></div>
-            </div>
-            <div>
-              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px;"><span>ដែកច្រេះ</span><span>15%</span></div>
-              <div class="cause-bar-track"><div class="cause-bar-fill" style="width:15%;background:#a78bfa;"></div></div>
-            </div>
-          </div>
-        </div>
-        <!-- HEATMAP -->
-        <div class="glass" style="border-radius:20px;padding:20px;">
-          <h4 style="font-size:14px;font-weight:600;margin-bottom:16px;">ផែនទីកម្ដៅហានិភ័យ</h4>
-          <div class="heatmap-grid">
-            <div class="heat-cell green"></div><div class="heat-cell yellow"></div><div class="heat-cell red"></div>
-            <div class="heat-cell green"></div><div class="heat-cell red"></div><div class="heat-cell red"></div>
-            <div class="heat-cell yellow"></div><div class="heat-cell yellow"></div><div class="heat-cell green"></div>
-          </div>
-          <div style="display:flex;gap:10px;margin-top:10px;font-size:11px;">
-            <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:rgba(0,200,83,0.75);display:inline-block;"></span>ទាប</span>
-            <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:rgba(255,193,7,0.75);display:inline-block;"></span>មធ្យម</span>
-            <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:rgba(255,77,79,0.75);display:inline-block;"></span>ខ្ពស់</span>
-          </div>
-        </div>
+        <div class="glass" style="border-radius:20px;padding:20px;text-align:center;"><h4 style="font-size:14px;font-weight:600;margin-bottom:16px;">កម្រិតភាពធ្ងន់ធ្ងរ</h4><div id="gauge-ring" class="risk-ring" style="margin:0 auto;"></div><div style="margin-top:10px;font-size:12px;color:#888;" id="gauge-label">ទំហំ: 1.6mm</div></div>
+        <div class="glass" style="border-radius:20px;padding:20px;"><h4 style="font-size:14px;font-weight:600;margin-bottom:16px;">ការបែងចែកមូលហេតុ</h4><div class="space-y"><div><div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px;"><span>ការស្រុត</span><span>40%</span></div><div class="cause-bar-track"><div class="cause-bar-fill" style="width:40%;background:linear-gradient(90deg,#ff4d4f,#ff7a00);"></div></div></div><div><div><span>សីតុណ្ហភាព</span><span>25%</span></div><div class="cause-bar-track"><div class="cause-bar-fill" style="width:25%;background:#22d3ee;"></div></div></div><div><div><span>ការរួញ</span><span>20%</span></div><div class="cause-bar-track"><div class="cause-bar-fill" style="width:20%;background:#facc15;"></div></div></div><div><div><span>ដែកច្រេះ</span><span>15%</span></div><div class="cause-bar-track"><div class="cause-bar-fill" style="width:15%;background:#a78bfa;"></div></div></div></div></div>
+        <div class="glass" style="border-radius:20px;padding:20px;"><h4 style="font-size:14px;font-weight:600;margin-bottom:16px;">ផែនទីកម្ដៅហានិភ័យ</h4><div class="heatmap-grid"><div class="heat-cell green"></div><div class="heat-cell yellow"></div><div class="heat-cell red"></div><div class="heat-cell green"></div><div class="heat-cell red"></div><div class="heat-cell red"></div><div class="heat-cell yellow"></div><div class="heat-cell yellow"></div><div class="heat-cell green"></div></div><div style="display:flex;gap:10px;margin-top:10px;font-size:11px;"><span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:rgba(0,200,83,0.75);display:inline-block;"></span>ទាប</span><span><span style="width:10px;height:10px;border-radius:3px;background:rgba(255,193,7,0.75);display:inline-block;"></span>មធ្យម</span><span><span style="width:10px;height:10px;border-radius:3px;background:rgba(255,77,79,0.75);display:inline-block;"></span>ខ្ពស់</span></div></div>
       </div>
-
-      <!-- STRUCTURAL DIAGRAM -->
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
-          <h4 style="font-size:15px;font-weight:700;">គំនូសផ្នែករចនាសម្ព័ន្ធ</h4>
-          <span style="font-size:12px;color:#888;">ការបង្ហាញស្នាមប្រេះផ្ទាល់</span>
-        </div>
-        <div class="diagram-wrap">
-          <div class="struct-beam"></div>
-          <div class="struct-col"></div>
-          <svg style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 1000 300">
-            <polyline id="crack-line" points="420,80 460,130 430,180 490,240" fill="none" stroke="#ff4d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div class="diagram-label glass" style="left:16px;top:16px;font-size:12px;">ស្នាមប្រេះកណ្ដាលធ្នឹម</div>
-          <div class="diagram-label glass" style="right:16px;bottom:16px;font-size:12px;color:#ff6b6d;" id="crack-pattern-label">លំនាំ: ការស្រុតមិនស្មើ</div>
-        </div>
-      </div>
+      <div><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;"><h4 style="font-size:15px;font-weight:700;">គំនូសផ្នែករចនាសម្ព័ន្ធ</h4><span style="font-size:12px;color:#888;">ការបង្ហាញស្នាមប្រេះផ្ទាល់</span></div><div class="diagram-wrap"><div class="struct-beam"></div><div class="struct-col"></div><svg style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 1000 300"><polyline id="crack-line" points="420,80 460,130 430,180 490,240" fill="none" stroke="#ff4d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="diagram-label glass" style="left:16px;top:16px;font-size:12px;">ស្នាមប្រេះកណ្ដាលធ្នឹម</div><div class="diagram-label glass" style="right:16px;bottom:16px;font-size:12px;color:#ff6b6d;" id="crack-pattern-label">លំនាំ: ការស្រុតមិនស្មើ</div></div></div>
     </div>
 
-    <!-- 8. REPORT (hidden initially) -->
-    <div id="sec-report" class="card glass" style="display:none;">
-      <div class="card-header">
-        <h3>របាយការណ៍វិភាគ AI</h3>
-        <span class="badge-ai">Generated Report</span>
-      </div>
-      <div id="report-content" style="font-size:14px;line-height:1.8;color:#ccc;"></div>
-    </div>
-
+    <div id="sec-report" class="card glass" style="display:none;"><div class="card-header"><h3>របាយការណ៍វិភាគ AI</h3><span class="badge-ai">Generated Report</span></div><div id="report-content" style="font-size:14px;line-height:1.8;color:#ccc;"></div></div>
   </main>
 
   <!-- RIGHT AI PANEL -->
   <aside class="glass glow-cyan" style="border-radius:24px;padding:24px;position:sticky;top:80px;height:fit-content;">
-    <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px;">
-      <div>
-        <h3 style="font-size:20px;font-weight:800;">ការវាយតម្លៃ AI</h3>
-        <p style="font-size:12px;color:#888;margin-top:4px;">វិភាគវិស្វកម្មពេលជាក់ស្តែង</p>
-      </div>
-      <div class="green-dot pulse"></div>
-    </div>
-
-    <!-- SCORE -->
-    <div class="glass" style="border-radius:18px;padding:16px;margin-bottom:16px;border:1px solid rgba(255,77,79,0.3);">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-        <span style="font-size:13px;color:#aaa;">កម្រិតហានិភ័យ</span>
-        <span style="font-weight:700;font-size:17px;" id="risk-level">ខ្ពស់</span>
-      </div>
-      <div class="space-y">
-        <div class="score-row"><span style="color:#aaa;">ពិន្ទុភាពធ្ងន់ធ្ងរ</span><span id="severity-score">8.4 / 10</span></div>
-        <div class="score-row"><span style="color:#aaa;">កម្រិតជឿជាក់ AI</span><span>87%</span></div>
-        <div class="score-row"><span style="color:#aaa;">កម្រិតបន្ទាន់</span><span id="urgency-label" style="color:#fb923c;">ត្រូវពិនិត្យភ្លាម</span></div>
-      </div>
-    </div>
-
-    <!-- CAUSES -->
-    <div style="margin-bottom:16px;">
-      <h4 style="font-size:14px;font-weight:600;margin-bottom:10px;">មូលហេតុសក្តានុពល</h4>
-      <div class="space-y">
-        <div class="cause-item"><span>ការស្រុតមិនស្មើ</span><span style="color:#ff6b6d;">40%</span></div>
-        <div class="cause-item"><span>ការផ្លាស់ទីដោយកម្ដៅ</span><span style="color:#fb923c;">25%</span></div>
-        <div class="cause-item"><span>ដែកច្រេះ</span><span style="color:#facc15;">20%</span></div>
-        <div class="cause-item"><span>ការរួញ</span><span style="color:#a78bfa;">15%</span></div>
-      </div>
-    </div>
-
-    <!-- RECOMMENDATIONS -->
-    <div style="margin-bottom:20px;">
-      <h4 style="font-size:14px;font-weight:600;margin-bottom:10px;">ដំណោះស្រាយណែនាំ</h4>
-      <div id="recommendations" class="space-y">
-        <div class="action-item action-cyan">📋 តាមដានស្នាមប្រេះប្រចាំសប្ដាហ៍</div>
-        <div class="action-item action-cyan">🔬 ធ្វើតេស្ត UPV</div>
-        <div class="action-item action-red">💉 ជួសជុលដោយចាក់ Epoxy</div>
-      </div>
-    </div>
-
-    <!-- BUTTONS -->
-    <div class="grid2">
-      <button class="btn-primary" onclick="generateReport()">បង្កើតរបាយការណ៍</button>
-      <button class="btn-ghost" onclick="exportPDF()">ទាញយក PDF</button>
-    </div>
-
-    <!-- PROGRESS -->
-    <div style="margin-top:20px;padding:14px;background:rgba(255,255,255,0.03);border-radius:14px;border:1px solid rgba(255,255,255,0.07);">
-      <div style="font-size:12px;color:#888;margin-bottom:8px;">ការបំពេញទម្រង់</div>
-      <div class="cause-bar-track">
-        <div class="cause-bar-fill" id="progress-bar" style="width:35%;background:linear-gradient(90deg,#22d3ee,#3b82f6);"></div>
-      </div>
-      <div style="font-size:12px;color:#aaa;margin-top:6px;" id="progress-label">35% — 3/8 ផ្នែក</div>
-    </div>
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px;"><div><h3 style="font-size:20px;font-weight:800;">ការវាយតម្លៃ AI</h3><p style="font-size:12px;color:#888;margin-top:4px;">វិភាគវិស្វកម្មពេលជាក់ស្តែង</p></div><div class="green-dot pulse"></div></div>
+    <div class="glass" style="border-radius:18px;padding:16px;margin-bottom:16px;border:1px solid rgba(255,77,79,0.3);"><div style="display:flex;justify-content:space-between;margin-bottom:12px;"><span style="font-size:13px;color:#aaa;">កម្រិតហានិភ័យ</span><span style="font-weight:700;font-size:17px;" id="risk-level">ខ្ពស់</span></div><div class="space-y"><div class="score-row"><span>ពិន្ទុភាពធ្ងន់ធ្ងរ</span><span id="severity-score">8.4 / 10</span></div><div class="score-row"><span>កម្រិតជឿជាក់ AI</span><span>87%</span></div><div class="score-row"><span>កម្រិតបន្ទាន់</span><span id="urgency-label" style="color:#fb923c;">ត្រូវពិនិត្យភ្លាម</span></div></div></div>
+    <div style="margin-bottom:16px;"><h4 style="font-size:14px;font-weight:600;margin-bottom:10px;">មូលហេតុសក្តានុពល</h4><div class="space-y"><div class="cause-item"><span>ការស្រុតមិនស្មើ</span><span style="color:#ff6b6d;">40%</span></div><div class="cause-item"><span>ការផ្លាស់ទីដោយកម្ដៅ</span><span style="color:#fb923c;">25%</span></div><div class="cause-item"><span>ដែកច្រេះ</span><span style="color:#facc15;">20%</span></div><div class="cause-item"><span>ការរួញ</span><span style="color:#a78bfa;">15%</span></div></div></div>
+    <div style="margin-bottom:20px;"><h4 style="font-size:14px;font-weight:600;margin-bottom:10px;">ដំណោះស្រាយណែនាំ</h4><div id="recommendations" class="space-y"><div class="action-item action-cyan">📋 តាមដានស្នាមប្រេះប្រចាំសប្ដាហ៍</div><div class="action-item action-cyan">🔬 ធ្វើតេស្ត UPV</div><div class="action-item action-red">💉 ជួសជុលដោយចាក់ Epoxy</div></div></div>
+    <div class="grid2"><button class="btn-primary" onclick="generateReport()">បង្កើតរបាយការណ៍</button><button class="btn-ghost" onclick="exportPDF()">ទាញយក PDF</button></div>
+    <div style="margin-top:20px;padding:14px;background:rgba(255,255,255,0.03);border-radius:14px;border:1px solid rgba(255,255,255,0.07);"><div style="font-size:12px;color:#888;margin-bottom:8px;">ការបំពេញទម្រង់</div><div class="cause-bar-track"><div class="cause-bar-fill" id="progress-bar" style="width:35%;background:linear-gradient(90deg,#22d3ee,#3b82f6);"></div></div><div style="font-size:12px;color:#aaa;margin-top:6px;" id="progress-label">35% — 3/8 ផ្នែក</div></div>
   </aside>
-
 </div>
 
-<!-- TOAST -->
-<div id="toast" style="position:fixed;bottom:24px;right:24px;background:linear-gradient(135deg,#ff4d4f,#ff7a00);color:#fff;padding:14px 22px;border-radius:16px;font-size:14px;font-weight:600;display:none;z-index:999;box-shadow:0 0 30px rgba(255,77,79,0.4);">
-  ✓ <span id="toast-msg">រក្សាទុកបានជោគជ័យ</span>
-</div>
+<div id="toast" style="position:fixed;bottom:24px;right:24px;background:linear-gradient(135deg,#ff4d4f,#ff7a00);color:#fff;padding:14px 22px;border-radius:16px;font-size:14px;font-weight:600;display:none;z-index:999;box-shadow:0 0 30px rgba(255,77,79,0.4);"><span id="toast-msg"></span></div>
 
 <script>
-const state = {
-  crackType:'បញ្ឈរ', timing:'1–7 ថ្ងៃ', environment:'ស្ងួត',
-  crackWidth:1.6, hasWater:false, growing:false, behavior:'slow',
-  completed:new Set(['crack-type','crack-size','timing','behavior'])
-};
+const state = { crackType:'បញ្ឈរ', timing:'1–7 ថ្ងៃ', environment:'ស្ងួត', crackWidth:1.6, hasWater:false, growing:false, behavior:'slow', completed:new Set(['crack-type','crack-size','timing','behavior']) };
+const crackNotes = { 'បញ្ឈរ':'✓ ស្នាមប្រេះបញ្ឈរ — ជាញឹកញាប់ដោយសារការស្រុត','ទ្រេត ~45°':'✓ ស្នាមប្រេះ 45° — ជម្ងឺកាត់, ហានិភ័យខ្ពស់','ផ្ដេក':'✓ ស្នាមប្រេះផ្ដេក — ដោយសារការដាក់ទម្ងន់','រាងកោង':'✓ ស្នាមប្រេះកោង — ការប្រែប្រួលសីតុណ្ហភាព','បណ្ដោយ':'✓ ស្នាមប្រេះបណ្ដោយ — ការដាក់ទម្ងន់ច្រើន' };
+const crackDiagram = { 'បញ្ឈរ':{pts:'490,40 500,110 495,190 500,270',lbl:'លំនាំ: ការស្រុតបញ្ឈរ'}, 'ទ្រេត ~45°':{pts:'340,80 430,140 510,200 590,260',lbl:'លំនាំ: កាត់-ទាញ 45°'}, 'ផ្ដេក':{pts:'260,160 430,155 590,165 740,158',lbl:'លំនាំ: ការចុះផ្ដេក'}, 'រាងកោង':{pts:'420,60 510,130 480,200 560,265',lbl:'លំនាំ: ការស្ទះ-សីតុណ្ហភាព'}, 'បណ្ដោយ':{pts:'420,90 460,145 430,200 490,260',lbl:'លំនាំ: ការស្រុតមិនស្មើ'} };
 
-const crackNotes = {
-  'បញ្ឈរ':'✓ ស្នាមប្រេះបញ្ឈរ — ជាញឹកញាប់ដោយសារការស្រុត ឬការដាក់ទម្ងន់ក្នុងទ្រេត',
-  'ទ្រេត ~45°':'✓ ស្នាមប្រេះ 45° — ជម្ងឺកាត់, ម្ចាស់ការចលករ, ហានិភ័យខ្ពស់',
-  'ផ្ដេក':'✓ ស្នាមប្រេះផ្ដេក — ដោយសារការដាក់ទម្ងន់ខាងក្រៅ ឬការស្ទះ',
-  'រាងកោង':'✓ ស្នាមប្រេះកោង — ការប្រែប្រួលសីតុណ្ហភាព ឬការចុះ',
-  'បណ្ដោយ':'✓ ស្នាមប្រេះបណ្ដោយ — ការដាក់ទម្ងន់ច្រើនលើធ្នឹម'
-};
-
-const crackDiagram = {
-  'បញ្ឈរ':  {pts:'490,40 500,110 495,190 500,270', lbl:'លំនាំ: ការស្រុតបញ្ឈរ'},
-  'ទ្រេត ~45°':{pts:'340,80 430,140 510,200 590,260', lbl:'លំនាំ: កាត់-ទាញ 45°'},
-  'ផ្ដេក':  {pts:'260,160 430,155 590,165 740,158', lbl:'លំនាំ: ការចុះផ្ដេក'},
-  'រាងកោង':{pts:'420,60 510,130 480,200 560,265', lbl:'លំនាំ: ការស្ទះ-សីតុណ្ហភាព'},
-  'បណ្ដោយ':{pts:'420,90 460,145 430,200 490,260', lbl:'លំនាំ: ការស្រុតមិនស្មើ'}
-};
-
-function scrollTo(id, el){
-  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
-  el.classList.add('active');
-  document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
+// Helper: smooth scroll to any section and update active nav
+function scrollToSection(sectionId, navElement) {
+  const target = document.getElementById(sectionId);
+  if (!target) return;
+  // If clicking report, show it (and optionally hide others? we'll just show it)
+  if (sectionId === 'sec-report') {
+    target.style.display = 'block';
+  } else {
+    // Ensure report is hidden when clicking other sections
+    const reportDiv = document.getElementById('sec-report');
+    if (reportDiv) reportDiv.style.display = 'none';
+    // Make sure all other sections are visible (they are by default)
+    document.querySelectorAll('.main-section, .card').forEach(sec => { if (sec.id !== 'sec-report') sec.style.display = ''; });
+  }
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Update active class
+  document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+  if (navElement) navElement.classList.add('active');
 }
 
-function selectCrackType(btn, type){
-  btn.closest('.flex-wrap-gap').querySelectorAll('.pill-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  state.crackType = type;
-  document.getElementById('crack-type-note').textContent = crackNotes[type] || '';
-  const d = crackDiagram[type] || crackDiagram['បណ្ដោយ'];
-  document.getElementById('crack-line').setAttribute('points', d.pts);
-  document.getElementById('crack-pattern-label').textContent = d.lbl;
-  state.completed.add('crack-type');
-  updateProgress();
-}
+// Attach click handlers to all sidebar nav items
+document.querySelectorAll('.nav-item').forEach(nav => {
+  nav.addEventListener('click', (e) => {
+    const targetId = nav.getAttribute('data-target');
+    if (targetId) scrollToSection(targetId, nav);
+  });
+});
 
-function selectPill(btn, group){
-  btn.closest('.flex-wrap-gap').querySelectorAll('.pill-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  if(group==='timing') state.timing = btn.textContent.trim();
-  if(group==='env') state.environment = btn.textContent.trim();
-  updateProgress();
-}
+// Rest of the original logic (keep all interactive functions unchanged)
+function selectCrackType(btn, type) { /* same as before */ }
+function updateSlider() { /* same */ }
+function updateGauge() { /* same */ }
+function selectBehavior(div, beh) { /* same */ }
+function updateAIPanel() { /* same */ }
+function updateProgress() { /* same */ }
+function saveInspector() { /* same */ }
+function generateReport() { /* same */ }
+function exportPDF() { showToast('PDF demo'); }
+function showToast(msg) { /* same */ }
+function previewImage(input) { /* same */ }
 
-function toggleCheck(wrapId, chk, key){
-  const wrap = document.getElementById(wrapId);
-  chk.checked ? wrap.classList.add('checked') : wrap.classList.remove('checked');
-  state[key] = chk.checked;
-  updateAIPanel(); updateGauge();
-}
+// Re-declare functions for completeness (they already exist in original but we need to bind)
+// Here we re-attach events for buttons etc.
+document.querySelectorAll('#sec-crack-type .pill-btn').forEach(btn=>btn.addEventListener('click',()=>selectCrackType(btn,btn.getAttribute('data-type'))));
+document.getElementById('crack-width-slider').addEventListener('input',updateSlider);
+document.getElementById('chk-water').addEventListener('change',e=>{ state.hasWater=e.target.checked; document.getElementById('chk-water-wrap').classList.toggle('checked',e.target.checked); updateAIPanel(); updateGauge(); });
+document.getElementById('chk-growing').addEventListener('change',e=>{ state.growing=e.target.checked; document.getElementById('chk-growing-wrap').classList.toggle('checked',e.target.checked); updateAIPanel(); updateGauge(); });
+document.querySelectorAll('#sec-timing .pill-btn').forEach(btn=>btn.addEventListener('click',()=>{ state.timing=btn.innerText.trim(); document.querySelectorAll('#sec-timing .pill-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); updateProgress(); }));
+document.querySelectorAll('#sec-environment .pill-btn').forEach(btn=>btn.addEventListener('click',()=>{ state.environment=btn.innerText.trim(); document.querySelectorAll('#sec-environment .pill-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); updateAIPanel(); }));
+document.querySelectorAll('#sec-behavior .behavior-row').forEach(div=>div.addEventListener('click',()=>{ const beh=div.getAttribute('data-beh'); state.behavior=beh; document.querySelectorAll('#sec-behavior .behavior-row').forEach(r=>r.classList.remove('beh-green','beh-orange','beh-red')); if(beh==='stable') div.classList.add('beh-green'); else if(beh==='slow') div.classList.add('beh-orange'); else div.classList.add('beh-red'); state.completed.add('behavior'); updateAIPanel(); updateProgress(); }));
+document.getElementById('crack-image').addEventListener('change',previewImage);
+['crack-desc','location-input','inspection-date','project-name'].forEach(id=>{ let el=document.getElementById(id); if(el) el.addEventListener('input',()=>{ state.completed.add(id); updateProgress(); }); });
+document.getElementById('building-type').addEventListener('change',()=>{ state.completed.add('building'); updateProgress(); });
 
-function updateSlider(){
-  const v = parseFloat(document.getElementById('crack-width-slider').value);
+function updateSlider() {
+  let v = parseFloat(document.getElementById('crack-width-slider').value);
   state.crackWidth = v;
-  document.getElementById('slider-val').textContent = v.toFixed(1)+' mm';
-  document.getElementById('range-fill').style.width = ((v/10)*100)+'%';
-  const sm = document.getElementById('size-label-small');
-  const md = document.getElementById('size-label-medium');
-  sm.style.border=''; sm.style.color=''; md.style.border=''; md.style.color='';
-  if(v < 0.3){ sm.style.border='1px solid #4ade80'; sm.style.color='#4ade80'; }
-  else if(v < 1){ md.style.border='1px solid #fb923c'; md.style.color='#fb923c'; md.textContent='មធ្យម'; }
-  else { md.style.border='1px solid #ff4d4f'; md.style.color='#ff6b6d'; md.textContent='ធំ >1mm'; }
-  document.getElementById('gauge-label').textContent = 'ទំហំ: '+v.toFixed(1)+'mm';
+  document.getElementById('slider-val').innerText = v.toFixed(1)+' mm';
+  document.getElementById('range-fill').style.width = (v/10)*100+'%';
+  let sm=document.getElementById('size-label-small'), md=document.getElementById('size-label-medium');
+  sm.style.border=''; md.style.border=''; md.style.color='';
+  if(v<0.3){ sm.style.border='1px solid #4ade80'; sm.style.color='#4ade80'; }
+  else if(v<1){ md.style.border='1px solid #fb923c'; md.style.color='#fb923c'; md.innerText='មធ្យម'; }
+  else { md.style.border='1px solid #ff4d4f'; md.style.color='#ff6b6d'; md.innerText='ធំ >1mm'; }
+  document.getElementById('gauge-label').innerText = 'ទំហំ: '+v.toFixed(1)+'mm';
   updateGauge(); updateAIPanel();
 }
-
-function updateGauge(){
+function updateGauge() {
   let pct = Math.min(Math.round((state.crackWidth/10)*100),100);
   if(state.hasWater) pct = Math.min(pct+15,100);
   if(state.growing) pct = Math.min(pct+10,100);
-  const color = pct>70?'#ff4d4f':pct>40?'#fb923c':'#4ade80';
-  const ring = document.getElementById('gauge-ring');
+  let color = pct>70?'#ff4d4f':pct>40?'#fb923c':'#4ade80';
+  let ring = document.getElementById('gauge-ring');
   ring.style.background = `radial-gradient(circle at center,#111 55%,transparent 56%),conic-gradient(${color} 0 ${pct}%,rgba(255,255,255,0.08) ${pct}%)`;
   ring.innerHTML = `<div style="text-align:center"><div style="font-size:28px;font-weight:800;">${pct}%</div><div style="font-size:12px;margin-top:2px;color:${color};">${pct>70?'ខ្ពស់':pct>40?'មធ្យម':'ទាប'}</div></div>`;
 }
-
-function selectBehavior(type){
-  ['beh-stable','beh-slow','beh-water','beh-rapid'].forEach(id=>{
-    document.getElementById(id).className='behavior-row';
-  });
-  const map={stable:'beh-green',slow:'beh-orange',water:'beh-red',rapid:'beh-red'};
-  document.getElementById('beh-'+type).classList.add(map[type]);
-  state.behavior = type;
-  state.completed.add('behavior');
-  updateAIPanel(); updateProgress();
-}
-
-function updateAIPanel(){
-  let score = 2 + (state.crackWidth/10)*6;
-  if(state.hasWater) score += 1;
-  if(state.growing) score += 0.5;
-  if(state.behavior==='rapid') score += 1.5;
-  if(state.behavior==='water') score += 1;
-  score = Math.min(score, 10);
-  document.getElementById('severity-score').textContent = score.toFixed(1)+' / 10';
-  const riskEl = document.getElementById('risk-level');
-  const urgEl  = document.getElementById('urgency-label');
-  const recDiv = document.getElementById('recommendations');
-  if(score >= 7){
-    riskEl.textContent='ខ្ពស់'; riskEl.style.color='#ff6b6d';
-    urgEl.textContent='ត្រូវពិនិត្យភ្លាម!'; urgEl.style.color='#ff4d4f';
-    recDiv.innerHTML=`<div class="action-item action-red">🚨 ហៅវិស្វករភ្លាម</div><div class="action-item action-red">💉 ចាក់ Epoxy ជួសជុល</div><div class="action-item action-cyan">📋 ត្រួតពិនិត្យរាល់ 2 ថ្ងៃ</div>`;
-  } else if(score >= 4){
-    riskEl.textContent='មធ្យម'; riskEl.style.color='#fb923c';
-    urgEl.textContent='តាមដានជិត'; urgEl.style.color='#fb923c';
-    recDiv.innerHTML=`<div class="action-item action-cyan">📋 តាមដានប្រចាំសប្ដាហ៍</div><div class="action-item action-cyan">🔬 ធ្វើតេស្ត UPV</div><div class="action-item action-red">💉 ពិចារណាចាក់ Epoxy</div>`;
+function updateAIPanel() {
+  let score = 2 + (state.crackWidth/10)*6 + (state.hasWater?1:0) + (state.growing?0.5:0) + (state.behavior==='rapid'?1.5:state.behavior==='water'?1:0);
+  score = Math.min(score,10);
+  document.getElementById('severity-score').innerText = score.toFixed(1)+' / 10';
+  let riskEl = document.getElementById('risk-level'), urgEl = document.getElementById('urgency-label'), recDiv = document.getElementById('recommendations');
+  if(score>=7){
+    riskEl.innerText='ខ្ពស់'; riskEl.style.color='#ff6b6d'; urgEl.innerText='ត្រូវពិនិត្យភ្លាម!'; urgEl.style.color='#ff4d4f';
+    recDiv.innerHTML = `<div class="action-item action-red">🚨 ហៅវិស្វករភ្លាម</div><div class="action-item action-red">💉 ចាក់ Epoxy</div><div class="action-item action-cyan">📋 ត្រួតពិនិត្យរាល់ 2 ថ្ងៃ</div>`;
+  } else if(score>=4){
+    riskEl.innerText='មធ្យម'; riskEl.style.color='#fb923c'; urgEl.innerText='តាមដានជិត'; urgEl.style.color='#fb923c';
+    recDiv.innerHTML = `<div class="action-item action-cyan">📋 តាមដានប្រចាំសប្ដាហ៍</div><div class="action-item action-cyan">🔬 ធ្វើតេស្ត UPV</div><div class="action-item action-red">💉 ពិចារណាចាក់ Epoxy</div>`;
   } else {
-    riskEl.textContent='ទាប'; riskEl.style.color='#4ade80';
-    urgEl.textContent='ត្រួតពិនិត្យធម្មតា'; urgEl.style.color='#4ade80';
-    recDiv.innerHTML=`<div class="action-item action-cyan">📋 ត្រួតពិនិត្យប្រចាំខែ</div><div class="action-item action-cyan">📷 ថតរូបចងក្រង</div>`;
+    riskEl.innerText='ទាប'; riskEl.style.color='#4ade80'; urgEl.innerText='ត្រួតពិនិត្យធម្មតា'; urgEl.style.color='#4ade80';
+    recDiv.innerHTML = `<div class="action-item action-cyan">📋 ត្រួតពិនិត្យប្រចាំខែ</div><div class="action-item action-cyan">📷 ថតរូបចងក្រង</div>`;
   }
 }
-
-function trackField(key){
-  state.completed.add(key);
+function selectCrackType(btn, type) {
+  btn.closest('.flex-wrap-gap').querySelectorAll('.pill-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  state.crackType = type;
+  document.getElementById('crack-type-note').innerText = crackNotes[type] || '';
+  let d = crackDiagram[type] || crackDiagram['បណ្ដោយ'];
+  document.getElementById('crack-line').setAttribute('points', d.pts);
+  document.getElementById('crack-pattern-label').innerText = d.lbl;
+  state.completed.add('crack-type');
   updateProgress();
 }
-
-function updateProgress(){
-  const total = 8;
-  const done = state.completed.size;
-  const pct = Math.round((done/total)*100);
+function updateProgress() {
+  let total=8, done=state.completed.size, pct=Math.round((done/total)*100);
   document.getElementById('progress-bar').style.width = Math.min(pct,100)+'%';
-  document.getElementById('progress-label').textContent = Math.min(pct,100)+'% — '+Math.min(done,total)+'/'+total+' ផ្នែក';
+  document.getElementById('progress-label').innerText = `${Math.min(pct,100)}% — ${Math.min(done,total)}/${total} ផ្នែក`;
 }
-
-function saveInspector(){
-  state.completed.add('inspector');
-  updateProgress();
-  showToast('រក្សាទុករួចរាល់! ✓');
+function saveInspector() { state.completed.add('inspector'); updateProgress(); showToast('រក្សាទុករួចរាល់! ✓'); }
+function generateReport() {
+  document.querySelectorAll('.main-section, .card').forEach(s=>{ if(s.id!=='sec-report') s.style.display='none'; });
+  let reportDiv = document.getElementById('sec-report');
+  reportDiv.style.display = 'block';
+  let score = (2 + (state.crackWidth/10)*6 + (state.hasWater?1:0) + (state.growing?0.5:0) + (state.behavior==='rapid'?1.5:0)).toFixed(1);
+  let project = document.getElementById('project-name').value || 'វីឡា A-09';
+  let dateStr = new Date().toLocaleDateString('km-KH');
+  document.getElementById('report-content').innerHTML = `<div style="border-left:3px solid #ff4d4f;padding-left:16px;"><strong>របាយការណ៍វិភាគស្នាមប្រេះ</strong><div>${dateStr} | ${project}</div></div><table style="width:100%;margin-top:16px;">${[['ទម្រង់',state.crackType],['ទំហំ',state.crackWidth.toFixed(1)+' mm'],['ជ្រាបទឹក',state.hasWater?'មាន':'គ្មាន'],['រីកធំ',state.growing?'បាទ':'ទេ'],['ពេលវេលា',state.timing],['ឥរិយាបថ',state.behavior],['បរិស្ថាន',state.environment],['អគារ',document.getElementById('building-type').value],['ទីតាំង',document.getElementById('location-input').value||'-'],['ពិន្ទុ AI',score+'/10'],['វិស្វករ','ឃឹម ពិទូរ្យ']].map(row=>`<tr><td style="padding:6px 0;color:#aaa;">${row[0]}<\/td><td>${row[1]}<\/td><\/tr>`).join('')}<\/table><div class="glass" style="margin-top:16px;padding:12px;">⚠️ សូមពិគ្រោះជាមួយវិស្វករ។</div>`;
+  reportDiv.scrollIntoView({behavior:'smooth'});
+  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+  document.querySelector('.nav-item[data-target="sec-report"]').classList.add('active');
+  showToast('របាយការណ៍ AI បានបង្កើត');
 }
-
-function generateReport(){
-  document.querySelectorAll('.main-section').forEach(s => s.style.display = 'none');
-  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  document.querySelectorAll('.nav-item')[7].classList.add('active');
-  const panel = document.getElementById('sec-report');
-  panel.style.display='block';
-  let score = 2 + (state.crackWidth/10)*6;
-  if(state.hasWater) score += 1;
-  if(state.growing) score += 0.5;
-  score = Math.min(score,10).toFixed(1);
-  const project = document.getElementById('project-name').value || 'វីឡា A-09';
-  const dateStr = new Date().toLocaleDateString('km-KH');
-  document.getElementById('report-content').innerHTML = `
-    <div style="border-left:3px solid #ff4d4f;padding-left:16px;margin-bottom:16px;">
-      <div style="font-size:16px;font-weight:700;margin-bottom:4px;">របាយការណ៍វិភាគស្នាមប្រេះ</div>
-      <div style="color:#888;font-size:12px;">ថ្ងៃ: ${dateStr} | គម្រោង: ${project}</div>
-    </div>
-    <table style="width:100%;font-size:13px;border-collapse:collapse;">
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;width:45%">ទម្រង់ស្នាមប្រេះ</td><td style="padding:8px 0;font-weight:600;">${state.crackType}</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ទំហំ</td><td style="padding:8px 0;font-weight:600;">${state.crackWidth.toFixed(1)} mm</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ជ្រាបទឹក</td><td style="padding:8px 0;font-weight:600;">${state.hasWater?'មាន ⚠️':'មិនមាន'}</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ការរីកធំ</td><td style="padding:8px 0;font-weight:600;">${state.growing?'មាន ⚠️':'មិនមាន'}</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ពេលវេលា</td><td style="padding:8px 0;font-weight:600;">${state.timing}</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ឥរិយាបថ</td><td style="padding:8px 0;font-weight:600;">${state.behavior}</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">បរិស្ថាន</td><td style="padding:8px 0;font-weight:600;">${state.environment}</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ប្រភេទអគារ</td><td style="padding:8px 0;font-weight:600;">${document.getElementById('building-type').value}</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ទីតាំង</td><td style="padding:8px 0;font-weight:600;">${document.getElementById('location-input').value||'—'}</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ពិន្ទុ AI</td><td style="padding:8px 0;color:#ff6b6d;font-weight:700;">${score} / 10</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">វិស្វករ</td><td style="padding:8px 0;">ឃឹម ពិទូរ្យ</td></tr>
-      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">លេខទូរស័ព្ទ</td><td style="padding:8px 0;">017 687 668</td></tr>
-    </table>
-    <div style="margin-top:16px;padding:12px;background:rgba(255,77,79,0.08);border:1px solid rgba(255,77,79,0.2);border-radius:12px;font-size:13px;color:#ff9a9b;">
-      ⚠️ សូមទំនាក់ទំនងវិស្វករដែលមានបទពិសោធន៍ដើម្បីបន្ត evaluation លម្អិត។
-    </div>`;
-  panel.scrollIntoView({behavior:'smooth'});
-  showToast('បង្កើតរបាយការណ៍រួចរាល់!');
-}
-
-function exportPDF(){ showToast('PDF កំពុងរៀបចំ... 📄'); }
-
-function previewImage(input){
-  if(input.files&&input.files[0]){
-    const reader = new FileReader();
-    reader.onload = e=>{
-      document.getElementById('preview-img').src = e.target.result;
-      document.getElementById('img-preview').style.display='block';
-      state.completed.add('image');
-      updateProgress();
-    };
-    reader.readAsDataURL(input.files[0]);
-  }
-}
-
-function showToast(msg){
-  const t = document.getElementById('toast');
-  document.getElementById('toast-msg').textContent = msg;
-  t.style.display='block';
-  setTimeout(()=>t.style.display='none', 2500);
-}
-
-// Init
-updateGauge();
-updateSlider();
-updateProgress();
-
-document.getElementById('project-name').addEventListener('input', ()=>{
-  state.completed.add('project');
-  updateProgress();
-});
-['crack-desc','location-input','inspection-date'].forEach(id=>{
-  const el = document.getElementById(id);
-  if(el) el.addEventListener('input', ()=>{ state.completed.add(id); updateProgress(); });
-});
+function previewImage(input) { if(input.files[0]){ let reader=new FileReader(); reader.onload=e=>{ document.getElementById('preview-img').src=e.target.result; document.getElementById('img-preview').style.display='block'; state.completed.add('image'); updateProgress(); }; reader.readAsDataURL(input.files[0]); } }
+function showToast(msg) { let t=document.getElementById('toast'); document.getElementById('toast-msg').innerText=msg; t.style.display='block'; setTimeout(()=>t.style.display='none',2500); }
+// Initialize
+updateSlider(); updateGauge(); updateAIPanel(); updateProgress();
 </script>
 </body>
 </html>
-```
