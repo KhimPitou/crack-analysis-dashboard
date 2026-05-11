@@ -27,19 +27,6 @@ header .inner{max-width:1800px;margin:0 auto;padding:16px 24px;display:flex;alig
 .layout{max-width:1800px;margin:0 auto;display:grid;grid-template-columns:200px 1fr 300px;gap:20px;padding:24px;}
 
 /* SIDEBAR */
-  <aside class="sidebar glass">
-    <h2 style="font-size:16px;font-weight:800;margin-bottom:18px;">ផ្នែកវិភាគ</h2>
-    <div class="space-y">
-      <div class="nav-item active" data-target="sec-crack-type"><i class="ti ti-pencil-minus"></i>ទម្រង់ស្នាមប្រេះ</div>
-      <div class="nav-item" data-target="sec-crack-size"><i class="ti ti-arrows-maximize"></i>ទំហំស្នាមប្រេះ</div>
-      <div class="nav-item" data-target="sec-timing"><i class="ti ti-clock"></i>ពេលកើតឡើង</div>
-      <div class="nav-item" data-target="sec-behavior"><i class="ti ti-activity"></i>ឥរិយាបថស្នាមប្រេះ</div>
-      <div class="nav-item" data-target="sec-environment"><i class="ti ti-cloud"></i>បរិស្ថាន</div>
-      <div class="nav-item" data-target="sec-inspector"><i class="ti ti-user"></i>អ្នកត្រួតពិនិត្យ</div>
-      <div class="nav-item" data-target="sec-diagram"><i class="ti ti-chart-dots"></i>គំនូសវិភាគ</div>
-      <div class="nav-item" data-target="sec-report"><i class="ti ti-file-text"></i>របាយការណ៍ AI</div>
-    </div>
-  </aside>
 .sidebar-nav h2{font-size:15px;font-weight:700;margin-bottom:16px;}
 .nav-item{padding:10px 14px;border-radius:14px;cursor:pointer;transition:all .2s;color:#ccc;display:flex;align-items:center;gap:8px;font-size:13px;}
 .nav-item:hover{background:rgba(255,255,255,0.06);transform:translateX(4px);color:#fff;}
@@ -156,6 +143,23 @@ input[type=range]{width:100%;accent-color:#ff4d4f;border:none;background:transpa
 <!-- LAYOUT -->
 <div class="layout">
 
+  <!-- SIDEBAR -->
+  <aside class="glass" style="border-radius:24px;padding:20px;height:fit-content;position:sticky;top:80px;">
+    <div class="sidebar-nav">
+      <h2>ផ្នែកវិភាគ</h2>
+      <div class="space-y">
+        <div class="nav-item active" onclick="scrollTo('sec-crack-type',this)"><i class="ti ti-pencil-minus"></i>ទម្រង់ស្នាមប្រេះ</div>
+        <div class="nav-item" onclick="scrollTo('sec-crack-size',this)"><i class="ti ti-arrows-maximize"></i>ទំហំស្នាមប្រេះ</div>
+        <div class="nav-item" onclick="scrollTo('sec-timing',this)"><i class="ti ti-clock"></i>ពេលកើតឡើង</div>
+        <div class="nav-item" onclick="scrollTo('sec-behavior',this)"><i class="ti ti-activity"></i>ឥរិយាបថស្នាមប្រេះ</div>
+        <div class="nav-item" onclick="scrollTo('sec-environment',this)"><i class="ti ti-cloud"></i>បរិស្ថាន</div>
+        <div class="nav-item" onclick="scrollTo('sec-inspector',this)"><i class="ti ti-user"></i>អ្នកត្រួតពិនិត្យ</div>
+        <div class="nav-item" onclick="scrollTo('sec-diagram',this)"><i class="ti ti-chart-dots"></i>គំនូសវិភាគ</div>
+        <div class="nav-item" onclick="scrollTo('sec-report',this)"><i class="ti ti-file-text"></i>របាយការណ៍ AI</div>
+      </div>
+    </div>
+  </aside>
+
   <!-- MAIN -->
   <main style="display:flex;flex-direction:column;gap:20px;">
 
@@ -268,10 +272,10 @@ input[type=range]{width:100%;accent-color:#ff4d4f;border:none;background:transpa
         <h3>5. ស្ថានភាពបរិស្ថាន</h3>
       </div>
       <div class="flex-wrap-gap" style="margin-bottom:16px;">
-        <button class="pill-btn" onclick="selectPill(this,'env')">ជើង / ទឹក</button>
+        <button class="pill-btn" onclick="selectPill(this,'env')">សំណើម / ប៉ះទឹក</button>
         <button class="pill-btn active" onclick="selectPill(this,'env')">ស្ងួត</button>
-        <button class="pill-btn" onclick="selectPill(this,'env')">អគ្គិសនី</button>
-        <button class="pill-btn" onclick="selectPill(this,'env')">ត្របកជ្រុះ</button>
+        <button class="pill-btn" onclick="selectPill(this,'env')">ប្រតិកម្មគីមី </button>
+        <button class="pill-btn" onclick="selectPill(this,'env')">របកជ្រុះ / ច្រេះ</button>
       </div>
       <div class="grid2col">
         <div>
@@ -392,7 +396,7 @@ input[type=range]{width:100%;accent-color:#ff4d4f;border:none;background:transpa
       </div>
     </div>
 
-    <!-- 8. REPORT -->
+    <!-- 8. REPORT (hidden initially) -->
     <div id="sec-report" class="card glass" style="display:none;">
       <div class="card-header">
         <h3>របាយការណ៍វិភាគ AI</h3>
@@ -608,11 +612,11 @@ function saveInspector(){
 }
 
 function generateReport(){
-document.querySelectorAll('.main-section').forEach(s => s.style.display = 'none');
-document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-document.querySelectorAll('.nav-item')[7].classList.add('active');
-const panel = document.getElementById('sec-report');
-panel.style.display='block';
+  document.querySelectorAll('.main-section').forEach(s => s.style.display = 'none');
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.querySelectorAll('.nav-item')[7].classList.add('active');
+  const panel = document.getElementById('sec-report');
+  panel.style.display='block';
   let score = 2 + (state.crackWidth/10)*6;
   if(state.hasWater) score += 1;
   if(state.growing) score += 0.5;
@@ -636,7 +640,7 @@ panel.style.display='block';
       <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ទីតាំង</td><td style="padding:8px 0;font-weight:600;">${document.getElementById('location-input').value||'—'}</td></tr>
       <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">ពិន្ទុ AI</td><td style="padding:8px 0;color:#ff6b6d;font-weight:700;">${score} / 10</td></tr>
       <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">វិស្វករ</td><td style="padding:8px 0;">ឃឹម ពិទូរ្យ</td></tr>
-      <tr><td style="padding:8px 0;color:#aaa;">លេខទូរស័ព្ទ</td><td style="padding:8px 0;">017 687 668</td></tr>
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.08)"><td style="padding:8px 0;color:#aaa;">លេខទូរស័ព្ទ</td><td style="padding:8px 0;">017 687 668</td></tr>
     </table>
     <div style="margin-top:16px;padding:12px;background:rgba(255,77,79,0.08);border:1px solid rgba(255,77,79,0.2);border-radius:12px;font-size:13px;color:#ff9a9b;">
       ⚠️ សូមទំនាក់ទំនងវិស្វករដែលមានបទពិសោធន៍ដើម្បីបន្ត evaluation លម្អិត។
@@ -683,3 +687,4 @@ document.getElementById('project-name').addEventListener('input', ()=>{
 </script>
 </body>
 </html>
+```
